@@ -18,4 +18,12 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function testBasicTest5()
+    {
+        $response = $this->get('/njit/bag');
+
+        $response->assertStatus(404);
+
+    }
 }

@@ -36,7 +36,6 @@ class UserTest extends TestCase
 
         $this->assertInternalType('float', 4.2);
 
-
     }
 
 }

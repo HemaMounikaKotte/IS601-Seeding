@@ -27,6 +27,7 @@ class UserTest extends TestCase
         $user = User::inRandomOrder()->first();
 
         $this->assertInternalType('string',$user->name);
+        $this->assertfinite($user->id);
 
     }
 }

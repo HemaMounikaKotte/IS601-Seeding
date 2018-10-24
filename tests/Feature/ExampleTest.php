@@ -24,6 +24,7 @@ class ExampleTest extends TestCase
         $response = $this->get('/njit/bag');
 
         $response->assertStatus(404);
+        $this->assertFileExists('/home/hema/PhpstormProjects/IS601-Seeding/tests/Feature/ExampleTest.php');
 
     }
 }
